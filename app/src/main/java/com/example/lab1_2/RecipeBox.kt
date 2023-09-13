@@ -52,7 +52,7 @@ fun RecipeBox(recipe: CakeRecipe, toggled: Boolean) {
                         textColor = Color.Black
                     )
                 }
-                for (section in recipe.sections) {
+                recipe.sections.map { section ->
                     // Every section has a image and a body
                     Row(
                         modifier = Modifier.padding(bottom = 10.dp)
